@@ -6,10 +6,14 @@ const Body = () => {
   
 
     return (
+        <>
         <div>
             <button onClick={()=> setToggle(!toggle)}>Options 
-            {toggle ? (
-            <div>
+            </button> 
+        </div>
+        <div>
+        {toggle ? (
+            <div style={{backgroundColor:"blue",boxShadow:"7px 10px 20px 1px",borderRadius:"20px" , padding:"20px", width:"200px", marginLeft:"45%", marginTop:"20px"}}>
             <select name="" id="">
                 <option value="">about</option>
                 <option value="">create</option>
@@ -19,9 +23,8 @@ const Body = () => {
              ) : (
             null
             )}
-            </button>
-           
         </div>
+        </>
     )
 }
 
